@@ -18,14 +18,10 @@ visp = scene.add_brain_regions("VISp", alpha=0.2)
 
 # load a cellfinder output file, set the color and the opacity
 cells = scene.add_cells_from_file(
-    "../data/cells/cell-detect-paper-cells.h5", color="salmon", alpha=0.8
+    "../data/cells/cell-detect-paper-cells.h5",
+    color="salmon",
+    alpha=0.8,
 )
-
-# download & load Allen Mouse Connectivity data
-# filepaths, data = scene.atlas.download_streamlines_for_region("RSP")
-# s = scene.add_streamlines(
-#     data[2:3], color="steelblue", show_injection_site=False, alpha=0.6,
-# )
 
 # Add an outline to regions
 # scene.add_silhouette(rsp, visp, scene.root)
