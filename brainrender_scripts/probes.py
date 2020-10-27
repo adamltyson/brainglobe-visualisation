@@ -7,6 +7,9 @@ from brainrender.scene import Scene
 # Swap from the "plastic" shader style to cartoon
 # brainrender.SHADER_STYLE = "cartoon"
 
+
+PROBE_RADIUS = 40
+PROBE_ALPHA = 0.2
 # Initialise the brainrender scene, default is the ARA
 scene = Scene()
 
@@ -18,19 +21,34 @@ visp = scene.add_brain_regions("VISp", alpha=0.2)
 
 # load probe tracks from brainreg_segment
 cells = scene.add_cells_from_file(
-    "../data/probes/track_1.h5", color="green", alpha=0.8, radius=20
+    "../data/probes/track_1.h5",
+    color="green",
+    alpha=PROBE_ALPHA,
+    radius=PROBE_RADIUS,
 )
 cells = scene.add_cells_from_file(
-    "../data/probes/track_2.h5", color="cyan", alpha=0.8, radius=20
+    "../data/probes/track_2.h5",
+    color="cyan",
+    alpha=PROBE_ALPHA,
+    radius=PROBE_RADIUS,
 )
 cells = scene.add_cells_from_file(
-    "../data/probes/track_3.h5", color="blue", alpha=0.8, radius=20
+    "../data/probes/track_3.h5",
+    color="blue",
+    alpha=PROBE_ALPHA,
+    radius=PROBE_RADIUS,
 )
 cells = scene.add_cells_from_file(
-    "../data/probes/track_4.h5", color="red", alpha=0.8, radius=20
+    "../data/probes/track_4.h5",
+    color="red",
+    alpha=PROBE_ALPHA,
+    radius=PROBE_RADIUS,
 )
 cells = scene.add_cells_from_file(
-    "../data/probes/track_5.h5", color="salmon", alpha=0.8, radius=20
+    "../data/probes/track_5.h5",
+    color="salmon",
+    alpha=PROBE_ALPHA,
+    radius=PROBE_RADIUS,
 )
 
 
