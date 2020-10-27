@@ -9,7 +9,7 @@ the case, please see the
 ```
 conda create --name brainglobe-vis python=3.8
 conda activate brainglobe-vis
-pip install brainrender napari[all] allensdk tables opencv-python
+pip install brainrender napari[all] allensdk tables opencv-python napari-cellfinder
 ```
 
 ### To check everything is installed properly, run:
