@@ -23,6 +23,13 @@ cells = scene.add_cells_from_file(
     alpha=0.8,
 )
 
+# get data from allen
+filepaths, data = scene.atlas.download_streamlines_for_region("RSP")
+s = scene.add_streamlines(
+    data[3:7], color="steelblue", show_injection_site=False, alpha=0.6,
+)
+
+
 # Add an outline to regions
 # scene.add_silhouette(rsp, visp, scene.root)
 
