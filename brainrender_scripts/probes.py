@@ -1,15 +1,10 @@
 import brainrender
 from brainrender.scene import Scene
 
-# Show axes in 3D
-# brainrender.SHOW_AXES = True
-
-# Swap from the "plastic" shader style to cartoon
-# brainrender.SHADER_STYLE = "cartoon"
-
-
+# set some parameters to reuse
 PROBE_RADIUS = 40
 PROBE_ALPHA = 0.2
+
 # Initialise the brainrender scene, default is the ARA
 scene = Scene()
 
@@ -50,10 +45,6 @@ cells = scene.add_cells_from_file(
     alpha=PROBE_ALPHA,
     radius=PROBE_RADIUS,
 )
-
-
-# Add an outline to regions
-# scene.add_silhouette(rsp, visp, scene.root)
 
 
 # Display the region
